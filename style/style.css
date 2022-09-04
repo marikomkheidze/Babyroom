@@ -17,9 +17,23 @@
     --white: #fff;
 }
 
+.body {
+    padding-top: 90px;
+
+}
+
+.section {
+    width: 100%;
+}
+
+
 /* ----------------------header--------------------- */
-.logo {
-    width: 150px;
+.header {
+    width: 100%;
+    background-color: var(--white);
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 .header-div {
@@ -29,11 +43,15 @@
     padding: 35px 0;
 }
 
+.logo {
+    width: 130px;
+}
+
 .nav-list {
-    width: 650px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 2vw;
 }
 
 .nav-link,
@@ -43,6 +61,7 @@
     font-size: 16px;
     line-height: 125%;
     color: var(--blue);
+
 }
 
 .head-contact {
@@ -53,4 +72,73 @@
     color: var(--pink);
     font-size: 17px;
     line-height: 125%;
+    gap: 16px;
+}
+
+.mail,
+.mobile {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* -----------------------------------------------sec-1---------------------------------------- */
+.sec-1 {
+    background: rgba(0, 0, 0, 0.5)url("../images/cover-bg.jpg");
+    background-blend-mode: darken;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    padding: 15vw 0;
+}
+
+.section-1 {
+    margin: 0 auto;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+
+}
+
+.title-main {
+    font-family: 'BPG Nino Medium Caps';
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--white);
+}
+
+.subtitle-main {
+    font-family: 'BPG Nino Medium Caps';
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    color: var(--white);
+
+}
+
+.btn-main {
+    font-family: 'BPG Nino Mtavruli Bold';
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    padding: 25px 45px;
+    border: solid;
+    border-radius: 8px;
+    color: var(--white);
+    transition: ease-in-out;
+}
+
+
+/* -------------------hover------------ */
+.btn-main:hover {
+    background-color: var(--white);
+    color: var(--black);
+    transition-duration: 0.5s;
+
+
 }
