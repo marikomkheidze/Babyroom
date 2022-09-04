@@ -1,0 +1,56 @@
+/* --------------------------------- ტექნიკური სტილები ------------------------ */
+.container-block {
+    height: 100%;
+    overflow: hidden;
+}
+
+.wraper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+:root {
+    --blue: #3A3D72;
+    --pink: #E6007E;
+    --orange: #FFAE00;
+    --black: #000;
+    --white: #fff;
+}
+
+/* ----------------------header--------------------- */
+.logo {
+    width: 150px;
+}
+
+.header-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 0;
+}
+
+.nav-list {
+    width: 650px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-link,
+.mail-to,
+.phone {
+    font-family: 'BPG Nino Mtavruli Bold';
+    font-size: 16px;
+    line-height: 125%;
+    color: var(--blue);
+}
+
+.head-contact {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--pink);
+    font-size: 17px;
+    line-height: 125%;
+}
