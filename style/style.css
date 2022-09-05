@@ -17,7 +17,7 @@
     --white: #fff;
 }
 
-.body {
+body {
     padding-top: 90px;
 
 }
@@ -44,42 +44,52 @@
 }
 
 .logo {
-    width: 130px;
+    width: 10vw;
 }
 
 .nav-list {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 2vw;
+    gap: 0.7vw;
 }
 
-.nav-link,
-.mail-to,
-.phone {
+.nav-link {
     font-family: 'BPG Nino Mtavruli Bold';
-    font-size: 16px;
+    font-size: 1.1vw;
     line-height: 125%;
     color: var(--blue);
 
 }
 
+.mail-to,
+.phone {
+    font-family: 'Poppins';
+    font-size: 1vw;
+    line-height: 125%;
+    color: var(--blue);
+    font-weight: 600;
+
+}
+
+.nav-link:last-child {
+    font-family: 'Poppins';
+    font-weight: 600;
+}
+
 .head-contact {
-    width: 300px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     color: var(--pink);
-    font-size: 17px;
+    font-size: 1.1vw;
     line-height: 125%;
-    gap: 16px;
+    gap: 1vw;
 }
 
 .mail,
 .mobile {
     display: flex;
-    align-items: center;
-    gap: 8px;
+    gap: 0.5vw;
 }
 
 /* -----------------------------------------------sec-1---------------------------------------- */
@@ -89,11 +99,12 @@
     background-position: center;
     background-size: cover;
     width: 100%;
-    padding: 15vw 0;
+    padding: 10vw 0;
 }
 
 .section-1 {
     margin: 0 auto;
+    padding-top: 2vw;
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -106,7 +117,7 @@
 .title-main {
     font-family: 'BPG Nino Medium Caps';
     font-weight: 600;
-    font-size: 40px;
+    font-size: 2.7vw;
     line-height: 150%;
     text-align: center;
     color: var(--white);
@@ -115,7 +126,7 @@
 .subtitle-main {
     font-family: 'BPG Nino Medium Caps';
     font-weight: 500;
-    font-size: 16px;
+    font-size: 1.1vw;
     text-align: center;
     color: var(--white);
 
@@ -124,7 +135,7 @@
 .btn-main {
     font-family: 'BPG Nino Mtavruli Bold';
     font-weight: 500;
-    font-size: 16px;
+    font-size: 1.1vw;
     text-align: center;
     padding: 25px 45px;
     border: solid;
@@ -133,12 +144,198 @@
     transition: ease-in-out;
 }
 
+/* ------------------------section2--------------------------- */
+
+.sec-2 {
+    width: 100%;
+}
+
+.services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8vw;
+    padding-bottom: 5vw;
+
+}
+
+.ourservices {
+    font-family: 'BPG Nino Mtavruli Bold';
+    font-size: 3vw;
+    font-weight: 500;
+    line-height: 120%;
+    color: var(--blue);
+    margin-top: 5vw;
+
+}
+
+.ourservices::after {
+    content: url(../images/wave-blue.svg);
+    display: flex;
+    justify-content: center;
+
+}
+
+.service {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3vw;
+}
+
+.service img {
+    max-width: 40vw;
+}
+
+.service-title {
+    font-family: 'BPG Nino Medium Caps';
+    font-size: 1.5vw;
+    line-height: 150%;
+    color: var(--blue);
+    font-weight: 800;
+}
+
+.service-title::after {
+    content: url(../images/wave-pink.svg);
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.s-list {
+    font-family: 'BPG Nino Medium Caps';
+    font-weight: 600;
+    font-size: 1.1vw;
+    line-height: 150%;
+    color: var(--black);
+    text-align: left;
+    margin-top: 0.7vw;
+}
+
+.s-list:last-child {
+    margin-bottom: 2vw;
+}
+
+.s-list::before {
+    content: url(../images/vector.svg);
+    margin-right: 0.5vw;
+
+}
+
+.btn-standart {
+    font-family: 'BPG Nino Medium Caps';
+    font-weight: 600;
+    font-size: 1.1vw;
+    padding: 8px 18px;
+    border: solid;
+    border-color: var(--blue);
+    border-radius: 8px;
+    line-height: 150%;
+    transition: ease-in-out;
+
+}
+
+/* ---------------------section3-------------------------- */
+.sec-3 {
+    background-color: var(--blue);
+    width: 100%;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 5vw;
+}
+
+.title-about {
+    font-family: 'BPG Nino Mtavruli Bold';
+    font-size: 3vw;
+    font-weight: 500;
+    line-height: 120%;
+    color: var(--white);
+    margin-top: 8vw;
+    text-align: center;
+
+}
+
+.title-about::after {
+    content: url(../images/wave-white.svg);
+    display: flex;
+    justify-content: center;
+
+}
+
+.text-about {
+    max-width: 774px;
+    font-family: 'BPG Nino Medium Caps';
+    font-weight: 500;
+    font-size: 1.1vw;
+    line-height: 150%;
+    color: var(--white);
+
+}
+
+.tuto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3.5vw;
+    margin-top: 5.5vw;
+}
+
+.tuto img {
+    width: 30vw;
+    border-radius: 20px;
+
+}
+
+.tuto-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5vw;
+}
+
+.speach {
+    max-width: 774px;
+    font-family: 'BPG Nino Medium Caps';
+    font-weight: 500;
+    font-size: 1.1vw;
+    line-height: 150%;
+    color: var(--white);
+}
+
+.signiture {
+    font-family: 'BPG Nino Mtavruli Bold';
+    font-weight: 600;
+    font-size: 1vw;
+    line-height: 150%;
+    color: var(--white)
+}
+
 
 /* -------------------hover------------ */
 .btn-main:hover {
     background-color: var(--white);
     color: var(--black);
     transition-duration: 0.5s;
+}
 
+.mail:hover {
+    text-decoration: underline;
+}
 
+.phone:hover {
+    text-decoration: underline;
+}
+
+.nav-link:hover {
+    color: var(--pink);
+}
+
+.btn-standart:hover {
+    background-color: var(--blue);
+    color: var(--white);
+    transition-duration: 0.3s;
 }
