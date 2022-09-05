@@ -232,6 +232,7 @@ body {
     border-radius: 8px;
     line-height: 150%;
     transition: ease-in-out;
+    color: var(--blue);
 
 }
 
