@@ -374,11 +374,69 @@ body {
 }
 
 
+/* -------------section5---------slider-------------------------- */
+.sec-5 {
+    padding: 5vw 0;
+    background-color: #F9F6F1;
+}
+
+.slider img {
+    max-width: 25vw;
+    margin: 1vw;
+    transition: ease 0.5s;
+
+}
+
+.slider img:hover {
+    cursor: pointer;
+    transform: scale(1.05, 1.05);
+    box-shadow: 3px 3px 13px grey;
+
+}
+
+/* ---------------------slick------------------- */
+.slick-list {
+    overflow: hidden;
+
+}
+
+.slick-track {
+    display: flex;
+}
+
+.slider {
+    position: relative;
+    padding: 0 50px;
+}
+
+.slick-arrow {
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+    font-size: 0;
+    width: 30px;
+    height: 45px;
+    border: none;
+    border-radius: 10px;
+}
+
+
+.slick-arrow.slick-prev {
+    left: 0;
+    background: url('../images/left.png') 0 0 no-repeat;
+
+}
+
+.slick-arrow.slick-next {
+    right: 0;
+    background: url('../images/right.png') 0 0 no-repeat;
+
+}
+
 /* -------------------hover------------ */
 .btn-main:hover {
     background-color: var(--white);
     color: var(--black);
-    transform: scale(1.05, 1.05);
 }
 
 .mail:hover {
@@ -402,5 +460,5 @@ body {
 .news-card img:hover {
     cursor: pointer;
     transform: scale(1.05, 1.05);
-    box-shadow: 3px 3px 12px black;
+    box-shadow: 3px 3px 12px #3A3D72;
 }
