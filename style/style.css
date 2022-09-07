@@ -373,9 +373,33 @@ body {
 
 }
 
-
-/* -------------section5---------slider-------------------------- */
+/* -----------------------------section5------------------------------ */
 .sec-5 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.name-form {
+    display: flex;
+}
+
+.number-form {
+    display: flex;
+}
+
+
+
+
+/* -------------section6---------slider-------------------------- */
+.sec-6 {
     padding: 5vw 0;
     background-color: #F9F6F1;
 }
