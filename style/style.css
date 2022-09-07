@@ -329,7 +329,7 @@ body {
 /* ------------------------------sec-4----------------------------- */
 .sec-4 {
     background-color: #F9F6F1;
-    padding-bottom: 3vw;
+    padding-bottom: 5vw;
 }
 
 .news-main {
@@ -342,6 +342,7 @@ body {
 
 .news-card {
     max-width: 100%;
+    padding: 1vw;
 }
 
 .news-card img {
@@ -349,6 +350,7 @@ body {
     height: 15vw;
     object-fit: fill;
     transition: all 0.5s ease;
+
 
 }
 
