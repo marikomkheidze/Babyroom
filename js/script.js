@@ -1,32 +1,36 @@
-$('.slider').slick({
-    infinite: true,
-    autoplay: true,
-    autoplayspeed: 300,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 2,
-    responsive: [
-        {
-            breakpoint: 1024,
-            settings: {
-                slidesToShow: 3,
-                slidesToScroll: 2,
-                infinite: true,
+$(document).ready(function () {
+    $('.slider').slick({
+        arrows: true,
+        dots: true,
+        slidesToShow: 3,
+        autoplay: true,
+        speed: 1000,
+        autoplaySpeed: 800,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 550,
+                settings: {
+                    slidesToShow: 1
+                }
             }
-        },
-        {
-            breakpoint: 600,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-            }
-        },
-        {
-            breakpoint: 480,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-            }
-        }
-    ]
+        ]
+    });
 });
+
+const buttons = document.querySelectorAll('button');
+
+buttons.forEach(button => {
+    button.addEventListener('click', () => {
+        const faq = button.nextElementSibling;
+        const icon = button.children[1];
+
+        faq.classList.toggle('show');
+        icon.classList.toggle('rotate');
+    })
+})
