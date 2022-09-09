@@ -33,4 +33,8 @@ buttons.forEach(button => {
         faq.classList.toggle('show');
         icon.classList.toggle('rotate');
     })
-})
+});
+
+function msg() {
+    alert("თქვენი შეტყობინება წარმატებით გაიგზავნა!");
+};

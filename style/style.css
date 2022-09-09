@@ -12,7 +12,7 @@
 :root {
     --blue: #3A3D72;
     --pink: #E6007E;
-    --orange: #FFAE00;
+    --beige: #F9F6F1;
     --black: #000;
     --white: #fff;
 }
@@ -331,7 +331,7 @@ body {
 
 /* ------------------------------sec-4----------------------------- */
 .sec-4 {
-    background-color: #F9F6F1;
+    background-color: var(--beige);
     padding-bottom: 5vw;
 }
 
@@ -345,7 +345,7 @@ body {
 }
 
 .grid-item {
-    background-color: #fff;
+    background-color: var(--white);
     border-radius: 5px;
     overflow: hidden;
     box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
@@ -412,6 +412,10 @@ body {
     justify-content: space-between;
 }
 
+.form {
+    margin-top: 2vw;
+}
+
 .contact {
     display: flex;
     flex-direction: column;
@@ -420,13 +424,83 @@ body {
     margin: 0 auto;
 }
 
-.name-form {
+.input-row {
     display: flex;
+    justify-content: space-between;
+    gap: 0.5vw;
+    margin-bottom: 1vw;
 }
 
-.number-form {
+.input-group {
     display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5vw;
+    font-family: 'BPG Nino Medium Caps';
+    font-weight: 600;
+    color: var(--blue);
 }
+
+input {
+    border: solid var(--blue);
+    border-radius: 8px;
+    width: 20vw;
+    height: 3vw;
+
+}
+
+.input-group ::placeholder {
+    color: var(--blue);
+    opacity: 0.6;
+    font-family: 'BPG Nino Medium Caps';
+    font-weight: 600;
+
+}
+
+.input-textarea {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5vw;
+    font-family: 'BPG Nino Medium Caps';
+    font-weight: 600;
+    color: var(--blue);
+
+}
+
+.textarea {
+    width: 40.5vw;
+    resize: none;
+    border: solid var(--blue);
+    border-radius: 8px;
+    height: 10vw;
+}
+
+.submit {
+    margin-top: 1vw;
+    color: var(--blue);
+    font-family: 'BPG Nino Medium Caps';
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.5s ease;
+
+}
+
+.map {
+    position: relative;
+}
+
+.map-pointer {
+    position: absolute;
+    z-index: 5;
+    bottom: 0%;
+    left: 0%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    color: var(--white);
+
+}
+
 
 
 
@@ -434,7 +508,7 @@ body {
 /* -------------section6---------slider-------------------------- */
 .sec-6 {
     padding-bottom: 5vw;
-    background-color: #F9F6F1;
+    background-color: var(--beige);
 }
 
 .slick-slider {
@@ -534,7 +608,7 @@ body {
 .question button {
     font-family: 'BPG Nino Mtavruli Bold';
     width: 100%;
-    background-color: #F9F6F1;
+    background-color: var(--beige);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -622,4 +696,10 @@ body {
 
 .card-header:hover {
     text-decoration: underline;
+}
+
+.submit:hover {
+    background-color: var(--blue);
+    color: var(--white);
+
 }

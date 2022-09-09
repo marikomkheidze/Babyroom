@@ -223,15 +223,40 @@
             <div class="contact">
                 <h2 class="news-title">დაგვიკავშირდით</h2>
                 <form class="form" action="#">
-
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label for="name">სახელი:</label>
+                            <input type="text" id="name" name="name" placeholder="შეიყვანეთ სახელი">
+                        </div>
+                        <div class="input-group">
+                            <label for="name">გვარი:</label>
+                            <input type="text" id="name" name="name" placeholder="შეიყვანეთ გვარი">
+                        </div>
+                    </div>
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label for="email">იმეილი:</label>
+                            <input type="email" id="email" name="email" placeholder="Email">
+                        </div>
+                        <div class="input-group">
+                            <label for="tel">ტელეფონის ნომერი:</label>
+                            <input type="tel" id="tel" name="tel" placeholder="ტელეფონი">
+                        </div>
+                    </div>
+                    <div class="input-textarea">
+                        <label for="textarea">გაგვიზიარეთ თქვენი აზრი:</label>
+                        <textarea id="textarea" name="textarea" class="textarea"> </textarea>
+                    </div>
+                    <input type="button" class="submit" value="დადასტურება" onclick="msg()">
                 </form>
 
             </div>
             <div class="map">
+                <a href="https://goo.gl/maps/A8bkiLfH4Qnyb2kX7" class="map-pointer">65 აბაშიძის ქუჩა, თბილისი</a>
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2978.556989842076!2d44.755133915396414!3d41.70849837923602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x404473364270c3bf%3A0x6639804de6d7961e!2zNjUg4YOQ4YOR4YOQ4YOo4YOY4YOr4YOY4YOhIOGDpeGDo-GDqeGDkCwg4YOX4YOR4YOY4YOa4YOY4YOh4YOY!5e0!3m2!1ska!2sge!4v1662556614916!5m2!1ska!2sge"
                     width="600" height="700" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    referrerpolicy="no-referrer-when-downgrade" class="map-online"></iframe>
             </div>
 
 
