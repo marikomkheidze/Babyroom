@@ -1,3 +1,16 @@
+let burgerButton = document.getElementById('toggle-menu');
+let navBar = document.getElementById('nav-list');
+
+
+burgerButton.addEventListener('click', function () {
+    navBar.classList.toggle('toggle');
+    burgerButton.classList.toggle('active');
+})
+document.querySelectorAll("nav-link").forEach(n => n.addEventListener("click", () => {
+    navBar.classList.remove("active");
+}));
+
+
 $(document).ready(function () {
     $('.slider').slick({
         arrows: true,

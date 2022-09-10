@@ -1,0 +1,115 @@
+@media (max-width:1024px) {
+    .map {
+        width: 35vw;
+
+    }
+}
+
+@media (max-width:768px) {
+    .head-contact {
+        margin-right: 40px
+    }
+
+    body {
+        padding-top: 0px;
+    }
+
+    .header {
+        position: inherit;
+    }
+
+    .toggle-menu {
+        display: block;
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    .nav-link {
+        font-size: 3vw;
+    }
+
+    .logo {
+        width: 20vw;
+    }
+
+    .mail-to,
+    .phone {
+        font-size: 1.7vw;
+    }
+
+    .head-contact {
+        color: var(--pink);
+        font-size: 1.7vw;
+        gap: 1vw;
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    .grid {
+        grid-template-columns: auto auto;
+    }
+
+    .card-img {
+        height: 25vw;
+    }
+
+    .sec-5 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .map {
+        width: 100vw;
+        height: 400px;
+    }
+}
+
+@media (max-width:480px) {
+    .sec-1 {
+        padding: 5vw 0;
+    }
+
+    .section-1 {
+        gap: 20px;
+    }
+
+    .btn-main {
+        padding: 15px 30px;
+    }
+
+    .grid {
+
+        grid-template-columns: auto;
+    }
+
+    .card-img {
+        height: 45vw;
+    }
+
+    .map {
+        width: 100vw;
+        height: 200px;
+    }
+
+    .map-pointer {
+        padding: 10px;
+    }
+
+    .textarea {
+        width: 300px;
+    }
+
+    input {
+        width: 150px;
+    }
+
+    .contact {
+        padding-left: 0;
+    }
+
+
+}
