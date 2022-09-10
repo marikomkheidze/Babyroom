@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @media (max-width:1024px) {
     .map {
         width: 35vw;
@@ -50,6 +57,7 @@
     }
 
     .grid {
+        -ms-grid-columns: auto auto;
         grid-template-columns: auto auto;
     }
 
@@ -58,7 +66,12 @@
     }
 
     .sec-5 {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
     }
 
@@ -82,6 +95,8 @@
     }
 
     .grid {
+
+        -ms-grid-columns: auto;
 
         grid-template-columns: auto;
     }
